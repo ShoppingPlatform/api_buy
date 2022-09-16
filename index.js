@@ -19,10 +19,10 @@ app.use(express.json());
 
 app.use("/api/v1/carts", cartRoute);
 
-// app.listen(process.env.PORT || 5000, () => {
-//   console.log("Backend server is running!");
-// });
-
-app.listen(5001, () => {
-  console.log("Backend cart server is running!");
+app.listen(process.env.PORT || 5001, () => {
+  console.log("Backend server is running!");
 });
+
+// app.listen(5001, () => {
+//   console.log("Backend cart server is running!");
+// });
